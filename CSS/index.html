@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SELECTOR</title>
+    <style>
+        /*3 Formas de dar estilo*/
+        /* 1 forma a través de la Etiqueta: todos los elementos se ven afectados*/
+        
+        p {
+            color: green;
+            background-color: gold;
+            /*color de fondo*/
+        }
+        
+        div {
+            color: red;
+            background-color: chocolate;
+        }
+        /* 2 forma a través de las clases (.): uno o más elementos se verán afectados, aquellos que tienen la clase */
+        
+        .parrafo {
+            color: blue;
+        }
+        /* 3 forma a través del ID (#): solo se verá afectado 1 elemento, quién tenga el ID*/
+        
+        #p3 {
+            color: indigo;
+        }
+        
+        #p4 {
+            color: cyan;
+        }
+        /*
+        elemento 1
+        .class 10
+        #id 100
+       */
+    </style>
+</head>
+
+<body>
+    <did>
+        algo
+        <p>parrafo 1</p>
+        <p class="parrafo">parrafo 2</p>
+        <p class="parrafo" id="p3">parrafo 3</p>
+        <p class="parrafo" id="p4">parrafo 4</p>
+    </did>
+    <div></div>
+</body>
+
+</html>
