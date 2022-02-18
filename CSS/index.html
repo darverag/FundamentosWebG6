@@ -10,13 +10,26 @@
         /*3 Formas de dar estilo*/
         /* 1 forma a través de la Etiqueta: todos los elementos se ven afectados*/
         
+        body {
+            background: seashell url("assets/img/images.jfif") no-repeat fixed center;
+            background-size: auto;
+            background-color: #070768f5;
+        }
+        
         p {
             color: green;
-            background-color: gold;
             /*color de fondo*/
+            background-color: gold;
+            font-size: 16px;
+            font-style: italic;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            /*fuentes genericas*/
         }
         
         div {
+            width: 400px;
+            height: 400px;
             color: red;
             background-color: chocolate;
         }
@@ -24,6 +37,11 @@
         
         .parrafo {
             color: blue;
+        }
+        
+        .web {
+            /* width: 400px;*/
+            height: 200px;
         }
         /* 3 forma a través del ID (#): solo se verá afectado 1 elemento, quién tenga el ID*/
         
@@ -43,14 +61,15 @@
 </head>
 
 <body>
-    <did>
-        algo
+    <div>
+        <h2>algo</h2>
         <p>parrafo 1</p>
         <p class="parrafo">parrafo 2</p>
         <p class="parrafo" id="p3">parrafo 3</p>
         <p class="parrafo" id="p4">parrafo 4</p>
-    </did>
-    <div></div>
-</body>
+    </div>
+    <br>
+    <div>
+        <img class="web" src="assets/img/universo.jfif" alt="universo"> </body>
 
 </html>
