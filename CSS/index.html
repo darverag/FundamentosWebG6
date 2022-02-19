@@ -40,8 +40,8 @@
         }
         
         .web {
-            /* width: 400px;*/
-            height: 200px;
+            width: 200px;
+            /*height: 200px;*/
         }
         /* 3 forma a través del ID (#): solo se verá afectado 1 elemento, quién tenga el ID*/
         
@@ -51,6 +51,24 @@
         
         #p4 {
             color: cyan;
+            text-decoration: overline;
+        }
+        
+        a {
+            text-decoration: line-through;
+            /*text-decoration 
+            underline
+            overline
+            line-trhough
+            none*/
+        }
+        
+        #tituloh2 {
+            text-align: center;
+        }
+        
+        #div2 {
+            text-align: center;
         }
         /*
         elemento 1
@@ -62,14 +80,17 @@
 
 <body>
     <div>
-        <h2>algo</h2>
+        <h2 id="tituloh2">algo</h2>
         <p>parrafo 1</p>
         <p class="parrafo">parrafo 2</p>
         <p class="parrafo" id="p3">parrafo 3</p>
         <p class="parrafo" id="p4">parrafo 4</p>
+        <a href="#">texto</a>
     </div>
     <br>
-    <div>
-        <img class="web" src="assets/img/universo.jfif" alt="universo"> </body>
+    <div id="div2">
+        <img class="web" src="assets/img/universo.jfif" alt="universo">
+    </div>
+</body>
 
 </html>
