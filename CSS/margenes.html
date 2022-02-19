@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margenes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            color: blue;
+        }
+        
+        .container {
+            width: 400px;
+            height: 400px;
+            padding: 10px;
+            background-color: cornflowerblue;
+            /*padding efecto visual de enviar los objetos al centro. El hijjo ocupa el 100% del contenedor padre*/
+        }
+        
+        .hijo {
+            width: 40px;
+            height: 40px;
+            background-color: red;
+            display: inline-block;
+        }
+        
+        .hijo2 {
+            width: 40px;
+            height: 40px;
+            background-color: green;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <p>parrafo</p>
+    <div class="container">
+        <div class="hijo"></div>
+        <div class="hijo2"></div>
+    </div>
+
+
+</body>
+
+</html>
