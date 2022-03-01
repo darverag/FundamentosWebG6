@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function objetos() {
+            //arreglo; {} objeto
+            var automovil = {
+                //marca: 'Mazda',
+
+                marca: {
+                    nombre: 'Mazda',
+                    origen: 'Japón'
+                },
+                modelo: '3 sport',
+                patente: 'LJKH63',
+                color: 'azul',
+                kilometraje: 15000,
+                usado: false,
+                encender: function() {
+                    alert('automóvil encendido.');
+                },
+
+                encender2: function() {
+                    alert('automóvil ' + marca.nombre + ' ' + modelo + 'encendido.');
+                    //alert('automóvil ' + marca.nombre + ' ' + modelo + ' encendido.');// marca is not defined
+                    alert('automóvil ' + this.marca.nombre + ' ' + this.modelo + ' encendido.');
+                }
+
+            };
+            //acceder al atributo por medio de corchetes
+            console.log(automovil["marca"]);
+            console.log(automovil["encender"]());
+
+            //acceder a atributos de objeto interno
+            console.log(automovil.marca.nombre);
+            console.log(automovil["marca"].nombre);
+            console.log(automovil["marca"]["nombre"]);
+
+
+            //RECORRER  for...in
+
+            for (let clave in automovil) {
+                console.log(`clave: ${clave}, valor: ${automovil[clave]}`)
+            }
+
+            //this: acceder a los atributos del objeto, donde esta la función
+            console.log(automovil.encender2());
+
+            //ejercicio this
+            //generar el mensaje (atributo) "El representante del alumno Manuel Pérez es Maria, quien reside en Chile"
+            let alumno = {
+                representante: {
+                    nombre: 'Maria',
+                    edad: 49,
+                    lugar: {
+                        pais: 'Chile',
+                        ciudad: 'Santiago de Chile'
+                    },
+                },
+                nombre: 'Manuel',
+                apellido: 'Perez',
+                peso: '45kg',
+                edad: 10,
+                amigable: true,
+
+                //forma de abordar ejercicio
+                mensaje: function() {
+                    alert("El representante del alumno " + this.nombre + " " + this.apellido + " es " + this.representante.nombre + ", quien reside en " + this.representante.lugar.pais);
+                }
+            };
+            //llamado a la funcion interna
+            alumno.mensaje();
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
